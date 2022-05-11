@@ -1,4 +1,4 @@
-export function RepositoryItem(props){
+ export function RepositoryItem(props){
     return(
         <li>
           <strong>{props.nomeDaProp}</strong>
