@@ -1,7 +1,8 @@
-import { RepositoryList } from "./components/RepositoryList";
+import { LandingPage } from "./components/LandingPage.jsx";
+
 
 export function App(){
     return (
-        <RepositoryList />
+        <LandingPage />
     )
 }
