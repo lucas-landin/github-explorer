@@ -8,13 +8,13 @@ interface Repository{
   html_url: string;
 }
 
-export function RepositoryList() {
+  export function RepositoryList() {
   const [repositories, setRepositories] = useState<Repository[]>([]);
   
-  useEffect(() => {
-    fetch("http://api.github.com/orgs/rocketseat/repos")
-      .then((response) => response.json())
-      .then((data) => setRepositories(data));
+  useEffect(() => { 
+  fetch("https://api.github.com/orgs/rocketseat/repos")
+  .then((response) => response.json())
+  .then((data) => setRepositories(data));
   }, []);
 
   return (
